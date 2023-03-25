@@ -2,27 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trump Punt Game</title>
-    <style>
-        canvas {
-            border: 1px solid black;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>Trump Punt Game</h1>
-    <p>Adjust trajectory and force to get Trump over the wall!</p>
-    <canvas id="gameCanvas" width="800" height="400"></canvas>
-    <br>
-    <label for="trajectory">Trajectory (0 to 90 degrees):</label>
-    <input type="number" id="trajectory" min="0" max="90" value="45">
-    <br>
-    <label for="force">Force (1 to 100):</label>
-    <input type="number" id="force" min="1" max="100" value="50">
-    <br>
-    <button onclick="punt()">Punt!</button>
-    <script src="game.js"></script>
+    <p>Adjust trajectory and force to get Trump over the wall in the most efficient manner.</p>
+    <div id="game">
+        <img id="trump" src="trump.png" alt="Cartoon Trump">
+        <img id="wall" src="wall.png" alt="Wall">
+    </div>
+    <label for="trajectory">Trajectory (degrees):</label>
+    <input id="trajectory" type="range" min="0" max="90" value="45">
+    <label for="force">Force:</label>
+    <input id="force" type="range" min="0" max="100" value="50">
+    <button id="punt">Punt Trump</button>
+    <script src="script.js"></script>
 </body>
 </html>
