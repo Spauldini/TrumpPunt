@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#game {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+#trump, #wall {
+    position: absolute;
+    bottom: 0;
+}
+
+#trump {
+    width: 50px; /* Adjust this value to change the size of the Trump image */
+    left: 10px;
+}
+
+#wall {
+    width: 50px; /* Adjust this value to change the size of the wall image */
+    left: 300px;
+}
